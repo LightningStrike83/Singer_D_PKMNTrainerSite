@@ -1,0 +1,18 @@
+@use "../abstracts/colours" as c;
+
+header {
+    background-color: c.$darkpink;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .nav-divider {
+        border-right: 1px solid c.$lightpink;
+    }
+    li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
