@@ -4,15 +4,53 @@ header {
     background-color: c.$darkpink;
 }
 
-ul {
+header {
+    .grid-con {
+        margin: 0;
+        grid-column: 2/3;
+    }
+}
+
+#hamburger-menu {
     display: flex;
-    flex-direction: row;
+    max-width: 50%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 25%;
+}
+
+
+#links {
+    display: none;
+    flex-direction: column;
+    text-align: right;
     justify-content: space-between;
     .nav-divider {
-        border-right: 1px solid c.$lightpink;
+        border-bottom: 1px solid c.$lightpink;
     }
     li {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    #links {
+        display: flex!important;
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: space-between;
+        .nav-divider {
+            border-right: 1px solid c.$lightpink;
+        }
+        li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }
