@@ -63,10 +63,17 @@
 #pokemon-main-image {
     margin-bottom: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     img {
-        max-height: 350px;
+        max-height: 80%;
+        margin-bottom: 20px;
+    }
+    p {
+        padding: 5px;
+        border: 1px solid white;
+        margin-bottom: 20px;
     }
 }
 
