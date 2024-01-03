@@ -7,26 +7,58 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script defer type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script async type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script defer src="js/gallery.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header class="grid-con">
-        <ul class="m-col-start-6 m-col-end-11">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="trainer.html">Trainer</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="pokemon.html">Pokemon</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+    <header class="full-width-grid-con">
+        <div class="grid-con">
+            <div id="hamburger-menu" class="col-start-4 col-end-5">
+                <svg id="ham-icon" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.83 22">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                          stroke: #ffffff;
+                          stroke-miterlimit: 10;
+                          stroke-width: 2px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="Layer_2-2" data-name="Layer 2">
+                      <line class="cls-1" y1="1" x2="51.83" y2="1"/>
+                      <line class="cls-1" y1="11" x2="51.83" y2="11"/>
+                      <line class="cls-1" y1="21" x2="51.83" y2="21"/>
+                    </g>
+                  </svg>
+            </div>
+            <ul id="links" class="col-span-full">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="trainer.html">Trainer</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="pokemon.html">Pokemon</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
     </header>
 
-    
+    <section class="grid-con">
+        <div id="gallery-greeting" class="col-span-full">
+            <h3>Welcome To The Gallery</h3>
+        </div>
+
+        <div id="gallery-instructions" class="col-span-full">
+            <p>Have a look at the glorious art done by many wonderful artists!</p>
+        </div>
+
+        <div id="gallery-carousel" class="col-span-full"></div>
+    </section>
 </body>
 </html>
