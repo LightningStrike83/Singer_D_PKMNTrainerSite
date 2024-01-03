@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Trainer: Delilah- Homepage</title>
+    <title>Pokemon Trainer: Delilah- Pokemon</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
@@ -12,21 +12,98 @@
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script defer src="js/pokemon.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header class="grid-con">
-        <ul class="m-col-start-6 m-col-end-11">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="trainer.html">Trainer</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="pokemon.html">Pokemon</a></li>
-            <li class="nav-divider"></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+    <header class="full-width-grid-con">
+        <div class="grid-con">
+            <div id="hamburger-menu" class="col-start-4 col-end-5">
+                <svg id="ham-icon" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.83 22">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #ffffff;
+                          stroke: #ffffff;
+                          stroke-miterlimit: 10;
+                          stroke-width: 2px;
+                        }
+                      </style>
+                    </defs>
+                    <g id="Layer_2-2" data-name="Layer 2">
+                      <line class="cls-1" y1="1" x2="51.83" y2="1"/>
+                      <line class="cls-1" y1="11" x2="51.83" y2="11"/>
+                      <line class="cls-1" y1="21" x2="51.83" y2="21"/>
+                    </g>
+                  </svg>
+            </div>
+            <ul id="links" class="col-span-full">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="trainer.html">Trainer</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="pokemon.html">Pokemon</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
     </header>
 
+    <section class="grid-con">
+        <div id="pokemon-welcome" class="col-span-full">
+            <h3>Welcome To The Pokemon Page</h3>
+        </div>
+
+        <div id="pokemon-instructions" class="col-span-full">
+            <p>Click on one of the tabs below to learn more about one of Delilah's Pokemon!</p>
+        </div>
+
+        <div id="pokemon-main-image" class="col-span-full m-col-span-6"></div>
+
+        <div id="pokemon-bio" class="col-span-full m-col-span-6"></div>
+
+        <div id="pokemon-buttons" class="col-span-full">
+            <div class="pokemon-button" data-member="0">
+                <img src="images/eevee-sprite.png" alt="Viola Sprite">
+                <p>Viola (Eevee)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="1">
+                <img src="images/swampert-sprite.png" alt="Skipper Sprite">
+                <p>Skipper (Swampert)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="2">
+                <img src="images/charizard-sprite.png" alt="Blaze Sprite">
+                <p>Blaze (Charizard)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="3">
+                <img src="images/torterra-sprite.png" alt="Mikey Sprite">
+                <p>Mikey (Torterra)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="4">
+                <img src="images/staraptor-sprite.png" alt="Striker Sprite">
+                <p>Striker (Staraptor)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="5">
+                <img src="images/sableye-sprite.png" alt="Shadow Sprite">
+                <p>Shadow (Sableye)</p>
+            </div>
+
+            <div class="pokemon-button" data-member="6">
+                <img src="images/jirachi-sprite.png" alt="Jirachi Sprite">
+                <p>Jirachi</p>
+            </div>
+        </div>
+
+        <div id="pokemon-image" class="col-span-full">
+            <img src="images/fam.png" alt="Full Team">
+            <p class="pink-bg">Art by <a href="https://studiompup.tumblr.com/post/647095522156593152/hey-guys-i-decided-to-make-a-post-to-fix-the">Desinhox</a></p>
+        </div>
+    </section>
     
 </body>
 </html>
