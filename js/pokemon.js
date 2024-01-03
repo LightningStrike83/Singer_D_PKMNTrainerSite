@@ -73,6 +73,7 @@
         let imageDiv = document.querySelector("#pokemon-main-image")
         let bioDiv = document.querySelector("#pokemon-bio")
         let pokemonPic = document.createElement("img")
+        let pokemonCredit = document.createElement("p")
         let pokemonName = document.createElement("p")
         let pokemonSpecies = document.createElement("p")
         let pokemonAbility = document.createElement("p")
@@ -89,6 +90,8 @@
         bioDiv.style.backgroundColor = "#f88294"
 
         pokemonPic.src = `images/${pokemonData[this.dataset.member].image}-main.png`
+        pokemonCredit.textContent = "Art by Sunbiscuit"
+        pokemonCredit.setAttribute('class', 'pink-bg')
         //pokemonText.textContent = `${pokemonData[this.dataset.member].name}<br>${pokemonData[this.dataset.member].species}${pokemonData[this.dataset.member].ability}<br>${pokemonData[this.dataset.member].gimmick}<br>`
         pokemonName.textContent = `${pokemonData[this.dataset.member].name}`
         pokemonSpecies.textContent = `${pokemonData[this.dataset.member].species}`
@@ -98,6 +101,7 @@
         
 
         imageDiv.appendChild(pokemonPic)
+        imageDiv.appendChild(pokemonCredit)
         bioDiv.appendChild(pokemonName)
         bioDiv.appendChild(pokemonSpecies)
         bioDiv.appendChild(pokemonAbility)
