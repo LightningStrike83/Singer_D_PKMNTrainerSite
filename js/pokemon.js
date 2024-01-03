@@ -7,6 +7,8 @@
             image : "eevee",
             name : "Name: Viola",
             species : "Species: Eevee",
+            gender : "Gender: Female",
+            nature : "Nature: Docile",
             ability : "Ability: Adaptability",
             gimmick : "Gimmick: Bond Phenomenon",
             bio : "Story: Delilah first met Viola in the Kalos region, unbeknownst to her. The young Eevee saw the trainer desperately attempt to find an Eevee to be her partner. After she gave up, the Eevee followed her all the way to the Kanto region, where the two finally met and became life-long partners. Through their bond, Viola has developed a unique power called Bond Phenomenon that allows her to use special moves that normal Eevee can't."
@@ -16,6 +18,8 @@
             image : "swampert",
             name : "Name: Skipper",
             species : "Species: Swampert",
+            gender : "Gender: Male",
+            nature : "Nature: Careful",
             ability : "Ability: Torrent",
             gimmick : "Gimmick: Mega Evolution",
             bio : "Story: Skipper was the very first Pokemon Delilah acquired when she became a trainer. As a gift from Professor Birch, she was given a selection of three Pokemon to choose from. She had her whole trainer career planned out, and selected the Mud Fish Pokemon, Mudkip. Together, the little Mudkip grew into a powerful Swampert thanks to the many battles Delilah used him in. Delilah found a mysterious stone that resonated with Skipper, and thanks to a new accessory, the two took their bond even further and gave Skipper the ability to mega evolve."
@@ -25,6 +29,8 @@
             image : "charizard",
             name : "Name: Blaze",
             species : "Species: Charizard",
+            gender : "Gender: Male",
+            nature : "Nature: Serious",
             ability : "Ability: Blaze",
             gimmick : "Gimmick: Gigantamax",
             bio : "Story: After hearing that a young, new trainer was travelling half way across the world just to capture a Pokemon, Professor Birch contacted his fellow colleague, Professor Sycamore, to help guide her. Sycamore met Delilah at the airport to hear her goal. While he was impressed by her determination, he was concerned about her safety, and offered her a Pokemon to help protect her, much to her surprise. She selected the Lizard Pokemon, Charmander, to help her achieve her goals. Through countless battles, Blaze evolved into a Charmeleon, then into Charizard, and gained the ability to fly. He is protective of his trainer and won't hesitate to unleash his flames when they're needed."
@@ -34,6 +40,8 @@
             image : "torterra",
             name : "Name: Mikey",
             species : "Species: Torterra",
+            gender : "Gender: Male",
+            nature : "Nature: Hardy",
             ability : "Ability: Overgrow",
             gimmick : "Gimmick: None",
             bio : "Story: After succeeding Wallace in Hoenn's Pokemon League, Delilah decided to travel around the world to experience what the Pokemon world had to offer. Her first stop was Sinnoh, where she met the region's Champion, Cynthia, in Sandgem Town. The two battled, which ended in Delilah's loss. Though, impressed with her strength and skill, she asked Professor Rowan to bestow a welcoming gift to the young Champion. She selected the Tiny Leaf Pokemon, Turtwig, to become a new part of her family. Eventually evolving into a Torterra, Mikey has proven to be an invaluable part of Delilah's team."
@@ -43,6 +51,8 @@
             image : "staraptor",
             name : "Name: Striker",
             species : "Species: Staraptor",
+            gender : "Gender: Male",
+            nature : "Nature: Adamant",
             ability : "Ability: Intimidate",
             gimmick : "Gimmick: None",
             bio : "Story: Delilah met Striker when he was a young Starly. First encountering him when she was travelling the world, she was initially impressed at his feistiness. He never backed away from a challenge and would always fight to his very last breath, sometimes against Delilah's wishes. Eventually evolving into the Staraptor he is today, the two have developed a strong bond where she can always rely on him for his strength and speed whenever she needs."
@@ -52,6 +62,8 @@
             image : "sableye",
             name : "Name: Shadow",
             species : "Species: Sableye",
+            gender : "Gender: Female",
+            nature : "Nature: Naughty",
             ability : "Ability: Prankster",
             gimmick : "Gimmick: None",
             bio : "Story: A shadow lurked deep within Dewford Cave, watching the young trainer carefully as she traversed her way through the cave. The moment she let her guard down, the shadow rose and took physical form, causing her shrieks to echo throughout the cave, disturbing all the Pokemon that dwelled within, except for this Sableye. Frustrated and embarrassed, Delilah caught the Sableye just to spite it. What she didn't realize at the time was just how much she'd grow attached to the prank-loving mischief maker."
@@ -61,6 +73,8 @@
             image : "Jirachi",
             name : "Name: Jirachi",
             species : "Species: Jirachi",
+            gender : "Gender: Non-binary",
+            nature : "Nature: Gentle",
             ability : "Ability: Serene Grace",
             gimmick : "Gimmick: None",
             bio : "Story: For one week, every thousand years, Jirachis arise from their slumber and are able to grant any wish that's bestowed upon them. Delilah met Jirachi by chance, as it was fleeing from a Pokemon Hunter. She fought off the hunter and the two bonded, where Delilah offered to protect the Jirachi. After learning the truth behind Jirachi's species, and an intense confrontation from those who wished to misuse Jirachi's power, Delilah's final wish to the Wish Pokemon was for it to never sleep again. Though, this came at a cost: Jirachi could never grant wishes ever again. However, both Delilah and Jirachi didn't mind this. Though not an official member of Delilah's team, Jirachi and her are best friends and they come to visit her from time to time, as it explores the world to see how the world changed since it last awoke."
@@ -76,6 +90,8 @@
         let pokemonCredit = document.createElement("p")
         let pokemonName = document.createElement("p")
         let pokemonSpecies = document.createElement("p")
+        let pokemonGender = document.createElement("p")
+        let pokemonNature = document.createElement("p")
         let pokemonAbility = document.createElement("p")
         let pokemonGimmick = document.createElement("p")
         let pokemonText = document.createElement("p")
@@ -95,6 +111,8 @@
         //pokemonText.textContent = `${pokemonData[this.dataset.member].name}<br>${pokemonData[this.dataset.member].species}${pokemonData[this.dataset.member].ability}<br>${pokemonData[this.dataset.member].gimmick}<br>`
         pokemonName.textContent = `${pokemonData[this.dataset.member].name}`
         pokemonSpecies.textContent = `${pokemonData[this.dataset.member].species}`
+        pokemonGender.textContent = `${pokemonData[this.dataset.member].gender}`
+        pokemonNature.textContent = `${pokemonData[this.dataset.member].nature}`
         pokemonAbility.textContent = `${pokemonData[this.dataset.member].ability}`
         pokemonGimmick.textContent = `${pokemonData[this.dataset.member].gimmick}`
         pokemonText.textContent = `${pokemonData[this.dataset.member].bio}`
@@ -104,6 +122,8 @@
         imageDiv.appendChild(pokemonCredit)
         bioDiv.appendChild(pokemonName)
         bioDiv.appendChild(pokemonSpecies)
+        bioDiv.appendChild(pokemonGender)
+        bioDiv.appendChild(pokemonNature)
         bioDiv.appendChild(pokemonAbility)
         bioDiv.appendChild(pokemonGimmick)
         bioDiv.appendChild(pokemonText)
