@@ -1,12 +1,9 @@
 #animated-intro {
-    display: flex;
-    justify-content: center;
     position: absolute;
     z-index: 10;
     top: 0;
-    left: 25%;
     img {
-        max-width: 100vh;
+        grid-column: 1/-1;
     }
 }
 
@@ -36,12 +33,37 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
     img {
         max-width: 75%;
         margin-bottom: 10px;
     }
     p {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    #animated-intro {
+        img {
+            max-width: 100vh;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    #animated-intro {
+        left: 25vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #animated-intro {
+        left: 25%;
+    }
+
+    #picture {
+        order: 1;
     }
 }
 
